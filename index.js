@@ -29,7 +29,7 @@ function sendRandomResponse(service) {
 var router = express.Router();
 
 router.get('/', function (req, res) {
-	res.render({
+	res.json({
 		web: sendRandomResponse('web'),
 		db: sendRandomResponse('db'),
 		mail: sendRandomResponse('mail'),

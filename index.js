@@ -18,7 +18,7 @@ function sendRandomResponse(service) {
 	if (isUp) {
 		lastUpTimes[service] = new Date()
 	}
-
+	
 	return {
 		status: isUp ? 'up' : 'down',
 		lastUpTime: lastUpTimes[service]
@@ -27,6 +27,14 @@ function sendRandomResponse(service) {
 
 // Set up routing
 var router = express.Router();
+
+router.get('/', function (req, res) {
+	res.json({
+		web: sendRandomResponse('web'),
+		db: sendRandomResponse('db'),
+		mail: sendRandomResponse('mail'),
+	})
+})
 
 router.get('/status', function (req, res) {
 	res.json({

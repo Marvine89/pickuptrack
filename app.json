@@ -1,0 +1,8 @@
+{
+  "name": "Pick Up Track: Node.js",
+  "description": "pick up track is an app that will help people to book for transportation's track",
+  "repository": "https://github.com/Marvine89/pickuptrack",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "pick-up-track",
+  "version": "1.0.0",
+  "description": "pick up track is an app that will help people to book for transportation's track",
+  "engines": {
+    "node": "7.6.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marvine89/pickuptrack"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
